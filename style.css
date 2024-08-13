@@ -1,0 +1,41 @@
+body{
+    background-color: antiquewhite;
+}
+.container{
+    background-color: white;
+    width: 600px;
+    display: block;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+.detail-place{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+#drop-down-elements{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 500px;
+
+}
+.right-sides{
+    margin-bottom: 10px;
+}
+span{
+    font-size: 18px;
+}
+.meridium{
+    margin-bottom: 5px;
+    
+}
+hr{
+    opacity: 0.7;
+}
