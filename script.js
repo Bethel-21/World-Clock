@@ -4,9 +4,7 @@ function updateTimeDate() {
   dateElement.innerHTML = addisDate;
 
   let timeElement = document.querySelector("#addis-ababa");
-  let addisTime = moment
-    .tz("Africa/Addis_Ababa")
-    .format("h:mm:ss A");
+  let addisTime = moment.tz("Africa/Addis_Ababa").format("h:mm:ss A");
   timeElement.innerHTML = addisTime;
 
   let dateElementNext = document.querySelector(".london-date");
@@ -14,9 +12,7 @@ function updateTimeDate() {
   dateElementNext.innerHTML = londonDate;
 
   let timeElementNext = document.querySelector("#london");
-  let londonTime = moment
-    .tz("Europe/London")
-    .format("h:mm:ss A");
+  let londonTime = moment.tz("Europe/London").format("h:mm:ss A");
   timeElementNext.innerHTML = londonTime;
 
   let dateElementThird = document.querySelector(".tokyo-date");
@@ -33,11 +29,11 @@ setInterval(updateTimeDate, 1000);
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
-  if(cityTimeZone === "current"){
+  if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
   let cityTime = moment().tz(cityTimeZone);
-  let cityName = cityTimeZone.replace("_", " ").split("/")[1]
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
 
   let updatePlace = document.querySelector(".details");
   updatePlace.innerHTML = `<div class="detail-place">
