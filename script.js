@@ -38,13 +38,13 @@ function updateCity(event) {
             <p class = "change-color">${cityTime.format("MMMM Do YYYY")}</p>
           </div>
           <div >
-            <h1> ${cityTime.format(
-              "h:mm:ss"
-            )} <small>${cityTime.format("A")}</small>
+            <h1> ${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    "A"
+  )}</small>
               
             </h1>
           </div>
-        </div>`;
+        </div> <a href = "index.html"> Back to Home </a>`;
 }
 
 let displayElement = document.querySelector("#drop-down-elements");
