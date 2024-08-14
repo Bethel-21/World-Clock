@@ -18,6 +18,14 @@ function updateTimeDate() {
     .tz("Europe/London")
     .format("h:mm:ss A");
   timeElementNext.innerHTML = londonTime;
+
+  let dateElementThird = document.querySelector(".tokyo-date");
+  let tokyoDate = moment().format("MMMM Do YYYY");
+  dateElementThird.innerHTML = tokyoDate;
+
+  let timeElementThird = document.querySelector("#tokyo");
+  let tokyoTime = moment.tz("Asia/Tokyo").format("h:mm:ss A");
+  timeElementThird.innerHTML = tokyoTime;
 }
 
 updateTimeDate();
