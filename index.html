@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -22,22 +24,24 @@
       <div class="detail-place">
         <div class="left-side">
           <h1>Addis Ababa</h1>
-          <p>August 13th, 2024</p>
+          <p class="addis-ababa">August 13th, 2024</p>
         </div>
         <div class="right-side">
-          <h1 class="right-sides">1:40:38 <span class="meridium">AM</span></h1>
+          <h1 class="right-sides" id="addis-ababa">
+             <span class="meridium"></span>
+          </h1>
         </div>
       </div>
 
-      <hr class="cutting-line">
+      <hr class="cutting-line" />
 
       <div class="detail-place">
         <div class="left-side">
-          <h1>London</h1>
-          <p>August 13th, 2024</p>
+          <h1 class="london">London</h1>
+          <p class="london-date"></p>
         </div>
         <div class="right-side">
-          <h1 class="right-sides">1:40:38 <span class="meridium">AM</span></h1>
+          <h1 class="right-sides" id="london"> <span class="meridium"></span></h1>
         </div>
       </div>
     </div>
